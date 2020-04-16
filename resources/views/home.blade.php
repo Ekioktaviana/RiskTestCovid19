@@ -1,17 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertanyaan</title>
+</head>
+<body>
+    
 @extends('layouts.app')
 
 @section('content')
 <link rel="stylesheet" type="text/css" href="home.css">
+<br>
+<div class="container">
 <div class="row justify-content-center">
 <div class="col-md-8">
     <div class="card shadow-sm border-0">
         <div class="card-body" >
-            <h2 class="text-center"> Answer All Question </h2>
+            <h2 class="text-center">Jawablah Dengan Jujur</h2>
             <div class="table-responsive">
             <form id="submit" action="{{url('/homes')}}" method="POST">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                <input type="hidden" name="id" value="{{Auth::user()->id}}"> 
-                <table class="table table-bordered table-hover" id="datatables">
+                <table class="table table-borderless table-hover" id="datatables" >
                     <thead>
                         <tr>
                             <th width="1">No</th>
@@ -19,8 +30,9 @@
                             <th width="5%">Jabawan</th>
                         </tr>
                     </thead>
+                    <hr>
                     <tbody>
-                       <tr>
+                      <tr>
                            <td style="vertical-align:middle">1</td>
                            <td style="vertical-align:middle">Saya pergi keluar rumah</td>
                            <td>
@@ -274,13 +286,17 @@
                     </tr>
                     </tbody>
                 </table>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <hr>
+                <div class="submit"><button type="submit" class="btn btn-primary">Simpan</button></div>
             </form>
             </div>
-
+            </div>
         </div>
     </div>
 </div>
 </div>
 @endsection
+<br><br>
+</body>
+</html>
 

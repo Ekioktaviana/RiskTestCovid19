@@ -57,33 +57,8 @@ class HomeController extends Controller
         $y20 = $request->y20;
         $y21 = $request->y21;
 
-        // $n1 = $request->n1;
-        // $n2 = $request->n2;
-        // $n3 = $request->n3;
-        // $n4 = $request->n4;
-        // $n5 = $request->n5;
-        // $n5 = $request->n5;
-        // $n5 = $request->n5;
-        // $n6 = $request->n6;
-        // $n7 = $request->n7;
-        // $n8 = $request->n8;
-        // $n9 = $request->n9;
-        // $n10 = $request->n10;
-        // $n11 = $request->n11;
-        // $n12 = $request->n12;
-        // $n13 = $request->n13;
-        // $n14 = $request->n14;
-        // $n15 = $request->n15;
-        // $n16 = $request->n16;
-        // $n17 = $request->n17;
-        // $n18 = $request->n18;
-        // $n19 = $request->n19;
-        // $n20 = $request->n20;
-        // $n21 = $request->n21;
-
         $y = $y1 + $y2 + $y3 + $y4 + $y5 + $y6 + $y7 + $y8 + $y9 + $y10 + $y11 + $y12 + $y13 + $y14 + $y15 + $y16 + $y17 + $y18 + $y19 + $y20 + $y21;
-        // $n = $n1 + $n2 + $n3 + $n4 + $n5 + $n6 + $n7 + $n8 + $n9 + $n10 + $n11 + $n12 + $n13 + $n14 + $n15 + $n16 + $n17 + $n18 + $n19 + $n20 + $n21;
-
+    
         DB::beginTransaction();
         $survey = new Survey();
         $survey->user_id = $request->id;

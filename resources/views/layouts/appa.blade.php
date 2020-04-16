@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<!-- <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -49,7 +49,7 @@
                                 </li>
                             @endif
                         @else
-                        <a class="dropdown-item" href="{{ route('logout') }}"
+                        <!-- <a class="dropdown-item" href="{{ route('logout') }}"
                         onclick="event.preventDefault();
                                       document.getElementById('logout-form').submit();">
                          {{ __('Logout') }}
@@ -57,7 +57,7 @@
 
                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                          @csrf
-                     </form>
+                     </form> -->
                         </div>
                         @endguest
                     </ul>
@@ -70,4 +70,4 @@
         </main>
     </div>
 </body>
-</html>
+</html> -->

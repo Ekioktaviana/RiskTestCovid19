@@ -1,7 +1,13 @@
+.background {
+    background-image: url(eki7.png);
+    background-size: cover;
+    height: 634px;
+    /* margin-top: 1px; */
+}
 .container {
-    margin-top: 9%;
+    /* margin-top: 50%; */
     width: 30%; 
-    box-shadow: 0 3px 20px rgba(0,0,0,0.3) ;
+    box-shadow: 0 3px 25px rgba(0,0,0,0.9) ;
     padding: 40px;
 }
  button {
@@ -13,5 +19,10 @@
  }
 
  label {
-     color: white;
+     color: black;
+ }
+
+ .kembali {
+    text-align: center;
+    width: 30%;
  }

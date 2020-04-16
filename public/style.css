@@ -1,17 +1,21 @@
 
 /* ini adalah style jumbotron */
 .jumbotron {
-    background-image: url(slide2.jpg);
+    background-image: url(eki2.jpg);
     background-size: cover;
-    height: 770px;
+    height: 800px;
     text-align: left;
-    margin-top: -120px;
+    margin-top: -180px;
 }
 
 .jumbotron .display-4 {
-    color: #1982F9;
-    margin-top: 250px;
+    color: #4ACD14;
+    margin-top: 300px;
+}
 
+.jumbotron .display-5 {
+    color: #4ACD14;
+    
 }
 .jumbotron p {
     color: #1982F9;
@@ -24,7 +28,7 @@
     text-align: left;
 } */
 .jumbotron .btn {
-    background-color:#1982F9 ;
+    background-color:#1AA961 ;
     border: none;
     border-radius: 25px;
     padding-right: 25px;

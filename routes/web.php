@@ -11,20 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('auth.register');
-});
 
-Auth::routes();
+Route::get('/', 'PageController@index');
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/', function () {
+//     return view('auth.register');
+// });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/homes', 'HomeController@store');
 Route::get('/score/{id}', 'HomeController@out');
-Route::get('/landingpage', 'PageController@index');
+// Route::get('/landingpage', 'PageController@index');
 
 
 
